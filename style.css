@@ -1,0 +1,31 @@
+.jumbotron {
+    padding-top: 6rem;
+    background-color: #d9ecf3;
+}
+
+#projects {
+    background-color: #d9ecf3;
+}
+
+#footer {
+    background-color: #d9ecf3;
+    text-black;
+}
+
+section {
+    padding-top: 5rem;
+}
+
+.gallery-img {
+    width: 100%;
+}
+
+/* cara mengakali gambar menempel semua pada "MINI GALLERY"
+1. jgan langsung gunakan class "col-md-3" karena dapat mempengaruhi css milik Bootstrap.
+2. penggantinya yaitu gunakan id milik gallery "#gallery"
+3. lanjutkan pemanggilan milik ".row"
+4. gunakan tanda bintang "*". karena tanda "*" digunakan untuk menghilangkan jarak padding maupun margin.
+5. setelah itu masuk di html dibagian "row"nya, ketikkan "justify-content-center"*/
+#gallery .row > * {
+    padding: 0;
+}

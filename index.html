@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons-->
+  <!-- Cara pakainya copy bagian "CDN" nya-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- AOS -->
+  <!-- penggunaan AOS cukup menyisipkan didalam class -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- My Css -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>My Portofolio | Dwi Yulanda Dimastya Maulana</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+    <!--kalau mau bikin warna Background sendiri "bg-light nya di hapus dan buat diluar tanda petik style="background-color: transparent;" "-->
+    <!-- Untuk membuat navbar tetap menempel diatas bisa dicari di "placement" (fixed-top,fixed-bottom,etc) -->
+    <div class="container">
+      <a class="navbar-brand" href="#">Dwi Yulanda Dimastya</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Me</a>
+            <!-- tanda "id" cara memanggilnya ketik "#" lalu dilanjutkan namanya -->
+            <!-- biar judulnya ga ngumpet didalam navbar, caranya buat "section" di css dan masukkan "padding-top: mungkin 5rem" -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">My Practices</a>
+          </li>
+          <li class="nav-item">
+            <a href="#gallery" class="nav-link">My Galleries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- Jumbotron -->
+  <section class="jumbotron text-center">
+    <img src="img/dimas.jpg" alt="Dwi Yulanda Dimastya Maulana" width="200" class="rounded-circle img-thumbnail">
+    <div class="row justify-content-center">
+      <h1 class="display-4">Dwi Yulanda Dimastya Maulana</h1>
+      <p class="lead col-md-10"></p>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffff" fill-opacity="1"
+        d="M0,160L10,181.3C20,203,40,245,60,234.7C80,224,100,160,120,149.3C140,139,160,181,180,181.3C200,181,220,139,240,133.3C260,128,280,160,300,176C320,192,340,192,360,165.3C380,139,400,85,420,80C440,75,460,117,480,117.3C500,117,520,75,540,74.7C560,75,580,117,600,138.7C620,160,640,160,660,138.7C680,117,700,75,720,101.3C740,128,760,224,780,250.7C800,277,820,235,840,218.7C860,203,880,213,900,192C920,171,940,117,960,133.3C980,149,1000,235,1020,272C1040,309,1060,299,1080,250.7C1100,203,1120,117,1140,74.7C1160,32,1180,32,1200,58.7C1220,85,1240,139,1260,160C1280,181,1300,171,1320,176C1340,181,1360,203,1380,218.7C1400,235,1420,245,1430,250.7L1440,256L1440,320L1430,320C1420,320,1400,320,1380,320C1360,320,1340,320,1320,320C1300,320,1280,320,1260,320C1240,320,1220,320,1200,320C1180,320,1160,320,1140,320C1120,320,1100,320,1080,320C1060,320,1040,320,1020,320C1000,320,980,320,960,320C940,320,920,320,900,320C880,320,860,320,840,320C820,320,800,320,780,320C760,320,740,320,720,320C700,320,680,320,660,320C640,320,620,320,600,320C580,320,560,320,540,320C520,320,500,320,480,320C460,320,440,320,420,320C400,320,380,320,360,320C340,320,320,320,300,320C280,320,260,320,240,320C220,320,200,320,180,320C160,320,140,320,120,320C100,320,80,320,60,320C40,320,20,320,10,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- Jumbotron End-->
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="row text-center mb-3">
+        <!-- luas kolom untuk di bootstrap itu 12-->
+        <!-- untuk menggeser ketengan masukkan di bagian row "text-center"-->
+        <div class="col">
+          <h2>About Me</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center fs-5 text-center">
+        <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
+          <p>My name is Dimas. I graduated with a Bachelor's degree in Japanese Language, Literature, and Culture. After graduation, I delved deeper into Japanese language and culture for approximately one year at a language school located in Osaka.</p>
+        </div>
+        <div class="col-md-4" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">
+          <p>I am a interpreter and language expert with 3 years of experience. Additionally, for the past 2 years, I have been sharpening my skills in graphic design by focusing on creating sign designs for stores. I am experienced in handling projects related to the opening of new stores and the renovation of existing ones.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center fs-5  text-center">
+        <div class="col-md-6" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="400">
+          <div class="col">
+            <p>Furthermore, I have successfully taught myself web design and have created an impressive web portfolio.</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#d9ecf3" fill-opacity="1"
+        d="M0,32L10,48C20,64,40,96,60,96C80,96,100,64,120,48C140,32,160,32,180,74.7C200,117,220,203,240,240C260,277,280,267,300,229.3C320,192,340,128,360,112C380,96,400,128,420,144C440,160,460,160,480,186.7C500,213,520,267,540,288C560,309,580,299,600,266.7C620,235,640,181,660,176C680,171,700,213,720,218.7C740,224,760,192,780,202.7C800,213,820,267,840,250.7C860,235,880,149,900,122.7C920,96,940,128,960,144C980,160,1000,160,1020,133.3C1040,107,1060,53,1080,48C1100,43,1120,85,1140,106.7C1160,128,1180,128,1200,133.3C1220,139,1240,149,1260,181.3C1280,213,1300,267,1320,277.3C1340,288,1360,256,1380,229.3C1400,203,1420,181,1430,170.7L1440,160L1440,320L1430,320C1420,320,1400,320,1380,320C1360,320,1340,320,1320,320C1300,320,1280,320,1260,320C1240,320,1220,320,1200,320C1180,320,1160,320,1140,320C1120,320,1100,320,1080,320C1060,320,1040,320,1020,320C1000,320,980,320,960,320C940,320,920,320,900,320C880,320,860,320,840,320C820,320,800,320,780,320C760,320,740,320,720,320C700,320,680,320,660,320C640,320,620,320,600,320C580,320,560,320,540,320C520,320,500,320,480,320C460,320,440,320,420,320C400,320,380,320,360,320C340,320,320,320,300,320C280,320,260,320,240,320C220,320,200,320,180,320C160,320,140,320,120,320C100,320,80,320,60,320C40,320,20,320,10,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- About End-->
+
+  <!-- Projects -->
+  <!-- cara bikin id shortcut section#nama-->
+  <section id="projects">
+    <!-- kalau pakainya "id" cara manggil di stylenya pakai "#" bukan pakai "."-->
+    <div class="container">
+      <div class="row text-center mb-3">
+        <!-- untuk memberikan jarak antara judul dengan project, masukkan "mb" pada row dan diikuti space-->
+        <div class="col">
+          <h2>My Practices</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <!-- Semisal projectnya ganjil tapi mau diatur ketengah, tulis "justtify-content-(center/evenly/between) setelah row dan beri space. untuk pengaturan tersebut bisa dicari di Bootstrap pada bagian layout yang colums "-->
+        <div class="col-md-4 mb-3">
+          <!-- biar layarnya responsif, buka Bootstrap bagian layout pilih Breakpoint ada pilihan "sm,md,lg,xl,xxl" dan ditulis ditengah-->
+          <!-- angka 4 itu menunjukkan 12 dibagi 3 kolom jadinya 4-->
+          <div class="card" data-aos="flip-left">
+            <!-- pertama widthnya dihapus dulu biar gambarnya memenuhi isi kolomnya-->
+            <!--img src="img/project/1.png" class="card-img-top" alt="project 1"-->
+            <video loop autoplay muted>
+              <source src="img/project/1.mp4" type="video/mp4">
+            </video>
+            <div class="card-body">
+              <p class="card-text">
+                <strong>Practice 1</strong> <br>I am trying to run a JavaScript prompt function that aims to display a dialog message. The dialog message will appear with two options: "OK" or "Cancel".</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card" data-aos="flip-right" data-aos-duration="500" data-aos-delay="250">
+            <!-- pertama widthnya dihapus dulu biar memenuhi isi kolomnya-->
+            <video loop autoplay muted>
+              <source src="img/project/2.mp4" type="video/mp4">
+            </video>
+            <div class="card-body">
+              <p class="card-text">
+                <strong>Practice 2</strong> <br>Beautifying a horizontal line's appearance by adding some animation effects can make a page look more attractive and interactive.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
+            <!-- pertama widthnya dihapus dulu biar memenuhi isi kolomnya-->
+            <video loop autoplay muted>
+              <source src="img/project/3.mp4" type="video/mp4">
+            </video>
+            <div class="card-body">
+              <p class="card-text">
+                <strong>Practice 3</strong> <br>Creating a responsive layout to display PDF content with a horizontal side-by-side arrangement, ensuring a comfortable reading experience for users.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="card" data-aos="flip-right" data-aos-duration="500" data-aos-delay="450">
+            <!-- pertama widthnya dihapus dulu biar memenuhi isi kolomnya-->
+            <video loop autoplay muted>
+              <source src="img/project/4.mp4" type="video/mp4">
+            </video>
+            <div class="card-body">
+              <p class="card-text">
+                <strong>Practice 4</strong> <br>The code attempts to create a responsive layout by invoking the "stickyHeader" function whenever the user scrolls. <br>In addition, it creates a filtering function that allows users to show or hide content based on the selected category, enabling them to explore the content more easily and making the interface more interactive.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="500">
+            <!-- pertama widthnya dihapus dulu biar memenuhi isi kolomnya-->
+            <video loop autoplay muted>
+              <source src="img/project/5.mp4" type="video/mp4">
+            </video>
+            <div class="card-body">
+              <p class="card-text">
+                <strong>Practice 5</strong> <br>The JavaScript function, "showConfirmation", provides users with an opportunity to consider their choice. If the user chooses to proceed, a message will appear and the user will be redirected to the specified page. <br> However, if the user chooses not to proceed, only a message will appear without any redirection to another page. This allows users to make decisions based on their preferences.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="card" data-aos="flip-right" data-aos-duration="500" data-aos-delay="650">
+            <!-- pertama widthnya dihapus dulu biar memenuhi isi kolomnya-->
+            <video loop autoplay muted>
+              <source src="img/project/6.mp4" type="video/mp4">
+            </video>
+            <div class="card-body">
+              <p class="card-text">
+                <strong>Practice 6</strong> <br>I am trying to understand the functions and usage of the Bootstrap platform, which is a framework for website development.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffff" fill-opacity="1"
+        d="M0,96L10,101.3C20,107,40,117,60,128C80,139,100,149,120,154.7C140,160,160,160,180,170.7C200,181,220,203,240,213.3C260,224,280,224,300,218.7C320,213,340,203,360,170.7C380,139,400,85,420,69.3C440,53,460,75,480,112C500,149,520,203,540,234.7C560,267,580,277,600,250.7C620,224,640,160,660,112C680,64,700,32,720,37.3C740,43,760,85,780,133.3C800,181,820,235,840,240C860,245,880,203,900,165.3C920,128,940,96,960,96C980,96,1000,128,1020,149.3C1040,171,1060,181,1080,170.7C1100,160,1120,128,1140,144C1160,160,1180,224,1200,234.7C1220,245,1240,203,1260,208C1280,213,1300,267,1320,245.3C1340,224,1360,128,1380,80C1400,32,1420,32,1430,32L1440,32L1440,320L1430,320C1420,320,1400,320,1380,320C1360,320,1340,320,1320,320C1300,320,1280,320,1260,320C1240,320,1220,320,1200,320C1180,320,1160,320,1140,320C1120,320,1100,320,1080,320C1060,320,1040,320,1020,320C1000,320,980,320,960,320C940,320,920,320,900,320C880,320,860,320,840,320C820,320,800,320,780,320C760,320,740,320,720,320C700,320,680,320,660,320C640,320,620,320,600,320C580,320,560,320,540,320C520,320,500,320,480,320C460,320,440,320,420,320C400,320,380,320,360,320C340,320,320,320,300,320C280,320,260,320,240,320C220,320,200,320,180,320C160,320,140,320,120,320C100,320,80,320,60,320C40,320,20,320,10,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- Projects End -->
+
+  <!-- Gallery Mini -->
+
+  <section id="gallery">
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2>Mini Galleries</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-3">
+          <a href="#">
+            <img src="img/project/thumbnail/1.jpg" alt="jpg 1" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="img/project/thumbnail/2.jpg" alt="jpg 2" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="img/project/thumbnail/3.jpg" alt="jpg 3" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="img/project/thumbnail/4.jpg" alt="jpg 4" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="img/project/thumbnail/5.jpg" alt="jpg 5" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="img/project/thumbnail/6.jpg" alt="jpg 6" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="img/project/thumbnail/7.jpg" alt="jpg 7" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="img/project/thumbnail/8.jpg" alt="jpg 8" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="img/project/thumbnail/9.jpg" alt="jpg 9" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="img/project/thumbnail/10.jpg" alt="jpg 10" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="img/project/thumbnail/11.jpg" alt="jpg 11" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="img/project/thumbnail/12.jpg" alt="jpg 12" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="img/project/thumbnail/13.jpg" alt="jpg 13" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="img/project/thumbnail/14.jpg" alt="jpg 14" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="img/project/thumbnail/15.jpg" alt="jpg 15" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="img/project/thumbnail/16.jpg" alt="jpg 16" class="img-fluid gallery-img">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Mini End -->
+
+  <!-- My Certificate -->
+
+<section id="my-certificate">
+  <div class="container">
+    <div class="row text-center mb-3">
+      <div class="col">
+        <h2>My Certificate</h2>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4 mb-3">
+      <!-- kalau dia medium "col-md-6" dan kalau dia large maka "col-lg-4", untuk memberikan jarak bawah pakainya "mb-3"-->
+    </div>
+  </div>
+</section>
+
+  <!-- My Certificate -->
+
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2>Contact Us</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <!-- alert -->
+          <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+            <strong>Well done!</strong> Your message has been received.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <!-- alert end -->
+
+          <!-- form -->
+          <form name="portofolio-contact-form">
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" aria-describedby="name" name="name"
+                placeholder="Dwi Yulanda Dimastya Maulana">
+              <!-- dibagian "for", "type", "id", "aria-describedby" bisa diganti-->
+              <!-- untuk memanggil element nama yang ada di google form sheet, caranya dengan menambahkan "name" yang dilanjutkan dengan nama yang ada di google form sheet. contoh name="name", atau name="email"-->
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" aria-describedby="email" name="email"
+                placeholder="address@gmail.com">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="3" name="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit"><i class="bi bi-send pe-2"></i>Submit</button>
+            <!-- dalam bootstrap pemberian nama tidak perlu membuat "class", cukum berikan namanya saja. contoh "btn-submit" atau "btn-loading", dan ketikkan di dalam class.-->
+
+            <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+              <!-- didalam bootstrap cara menghilangkan kelasnya cukum mengetikkan "d-none" didalam class -->
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
+            <!-- untuk menyambungkan ke google form sheets, harus memiliki "button" yang memiliki type="submit" -->
+          </form>
+          <!-- form end -->
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#d9ecf3" fill-opacity="1"
+        d="M0,0L17.1,16C34.3,32,69,64,103,101.3C137.1,139,171,181,206,186.7C240,192,274,160,309,154.7C342.9,149,377,171,411,176C445.7,181,480,171,514,186.7C548.6,203,583,245,617,245.3C651.4,245,686,203,720,160C754.3,117,789,75,823,53.3C857.1,32,891,32,926,48C960,64,994,96,1029,101.3C1062.9,107,1097,85,1131,64C1165.7,43,1200,21,1234,64C1268.6,107,1303,213,1337,261.3C1371.4,309,1406,299,1423,293.3L1440,288L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- Contact End -->
+
+  <!-- Footer -->
+  <footer id="footer" class="text-center pb-5">
+    <p>Created by
+      <i class="bi bi-brightness-alt-low-fill text-warning fs-1"></i>
+      <a href="https://www.linkedin.com/in/dwi-yulanda-dimastya-maulana-08b120173/" class="text-dark fw-bold"> Dwi
+        Yulanda Dimastya
+        Maulana</a>
+    </p>
+    <!-- untuk menebalkan huruf cari di Utilities yang text, bagian "fw" dan dimasukkan -->
+  </footer>
+  <!-- Footer End -->
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper end -->
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- untuk memodifikasi animasinya dapat dilihat dibagian dokumentasinya AOS yang "1. Initialize AOS" dan masukkan didalam "AOS.init({ contoh didalam sini })"-->
+  <script>
+
+    // cara mengatur animasi jumlah banyak dalam 1 rumus JS
+    const galleryImage = document.querySelectorAll('.gallery-img');
+    // yang artinya : 
+    // dom-nya "conts", variable-nya "galleryImage", yang memiliki isi didalamnya yaitu "document.querySelectorAll" dan tolong carikan datanya didalam ".gallery-img"
+    // setelah itu lakukan looping dengan cara dibawah ini
+    galleryImage.forEach((img, i) => {
+      img.dataset.aos = 'fade-down';
+      img.dataset.aosDelay = i * 100;
+      img.dataset.aosDuration = 1000;
+    });
+    // yang artinya :
+    // rumus diatas dinamakan JS dom. Bisa dilihat di chanel Web Programming UNPAS
+    // "img" itu nama element yang mau dipakai
+    // "i" itu adalah data indeks, yang berfungsi untuk mengatur "delay"
+
+    AOS.init({
+      once: true // animasi berjalan 1x saat discroll turun "true" dan "false"
+    });
+
+
+  </script>
+  <!-- AOS end -->
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+
+  <!-- text plugin atau memanipulasi text-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/TextPlugin.min.js"></script>
+  <!-- text plugin atau memanipulasi text-->
+
+
+  <!-- penggunaan GSAP ada 2 cara yaitu "gsap.to" (yang dijadikan patokan adalah awalnya "yang belum gerak sama sekali") dan "gsap.from" (yang jadi patokannya itu diakhirnya "setelah diberi animasi dan kembali kekondisi awal sebelum diberi animasi"). -->
+
+  <!-- Cara memanggil "plugin"-->
+  <!--  
+  1. Buka products pada menu bagian navbar
+  2. Pilih "plugin for GSAP"
+  3. Misal pada contoh CV ini yang mau digunakan "TextPlugin" / memanipulasi teks
+  4. Pilih "TextPlugin documentation"
+  5. Pilih bagian Demos yang "TextPlugin demos"
+-->
+
+  <!-- Cara menggunakan "Plugin" -->
+  <!-- Step 1 -->
+  <!--
+  1. Buka "Installation page" pada Frequently Asked Questions (FAQ)
+  2. Klik bagian "CDN" dan centang yang digunakan. contoh "text" 
+  3. Akan muncul tambahan script yang harus dimasukkan di html setelah script GSAP-nya
+  4. Setelah itu masukkan regristrasi yang bisa diambil di bagian "FAQ", yang isinya "gsap.registerPlugin(TextPlugin)"
+-->
+
+  <!-- Step 2 -->
+  <!--
+  Saya ambil contoh penggunaan "TextPlugin" di class "lead" (penjelasan sinkat setelah Nama). Yang awalnya kosong, kemudian muncul tulisan seperti diketik. Caranya sebagai berikut:
+  1. Cut isi text pada "lead", dan tempel didalam script bagian "text"  
+  2. Cara menambahkan script "gsap.to('.lead', { duration: 2, delay: 1.5, text: 'Japanese Interpreter | Graphic Designer | Web Developer | Production Supervisor | Japanese Language Equivalent to N1 | JLPT N2 | Job placement responsibility'})" 
+-->
+
+  <script>
+    // jika ingin menambahkan beberapa "plugin", cukup tambahkan tanda koma didalam kurungnya.
+    gsap.registerPlugin(TextPlugin);
+
+    gsap.to('.lead', { duration: 3.5, delay: 0.5, text: 'Japanese Interpreter | Graphic Designer | Web Developer | Production Supervisor | Japanese Language Equivalent to N1 | JLPT N2 | Job placement responsibility'})
+
+    gsap.from('.jumbotron img', { duration: 3.7, rotateY: 360, opacity: 0 })
+    // gsap tolong animasikan milik "jumbrotron yang img" dari "opacity: 0" berputar 360 derajat dengan durasi 1 detik. 
+    //data class yang mau diambil disarankan jangan memakai class nama milik Bootstrap, karena mempengaruhi elemen lain. elemennya "jumbtron yang img".
+    // opacity yang artinya awalnya ilang dulu itemnya
+    gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0, aese: 'bounce' })
+    gsap.from('.display-4', { duration: 1, x: -50, opacity: 0, delay: 0.5, aese: 'back' })
+  </script>
+
+  <!-- GSAP end -->
+
+  <!-- Google form sheets JS -->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzSDceTb_Ah354ULTEGAiUWvQtbusfPSLSHfOKp7MA1_fZLVvlX4YhaFZj_7PsmjrMF/exec'
+    // untuk SCRIPT URL nya diganti sama link dari google sheet. caranya buka di "deploy", "manage deployments", copy yang bagian URLnya "Web app"
+    const form = document.forms['portofolio-contact-form']
+    // nama yang didalam kurung setelah document.forms, diisi dengan nama yang ada di element "form" pada html. Dan cara memanggilnya dengan cara name="namanya"
+
+    // 2. Karena memiliki 3 tombol baru "loading", "submit", dan "alert". saya ingin memanggilnya dengan membuat sintaksis baru. dengan membuat "const btnSubmit = document.querySelector('.btn-submit')". 3 tombol tersebut digunakan untuk memanipulasi untuk muncul dan menghilangkan.
+    const btnSubmit = document.querySelector('.btn-submit')
+    const btnLoading = document.querySelector('.btn-loading')
+    const myAlert = document.querySelector('.my-alert')
+
+
+    form.addEventListener('submit', e => {
+      //1. ketika "form" nya di "submit" lakukan fungsi defaultnya (e.preventDefault), karenya fungsinya adalah "mengirimkan secara metode GET". tetapi jangan lakukan seperti itu. makadari itu ada fungsi dari "fetch" atau meminta data dari "scriptURL". Kalau berhasil pakai fungsi "then" dan kalau gagal pakai fungsi "catch".
+
+      e.preventDefault()
+
+      // 3. ketika tombol "submit" diklik
+      // 3.a tampilkan tombol "loading", hilangkan tombol "kirim"
+      // fungsi dari "toggle" adalah seperti swict atau sakelar ON or OFF
+      btnLoading.classList.toggle('d-none')
+      btnSubmit.classList.toggle('d-none')
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          // 3.b tampilkan tombol "kirim", hilangkan tombol "loading"
+          //untuk mengembalikan yang tadinya "hilang" jadi "muncul"
+          btnLoading.classList.toggle('d-none')
+          btnSubmit.classList.toggle('d-none')
+          // 3.c tampilkan "alert"
+          myAlert.classList.toggle('d-none')
+          // 3.d reset formnya
+          form.reset()
+          console.log('Success!', response)
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <!-- Google form sheets JS end -->
+
+</body>
+
+</html>
