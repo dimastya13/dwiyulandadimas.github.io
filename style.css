@@ -29,3 +29,109 @@ section {
 #gallery .row > * {
     padding: 0;
 }
+
+/* My Certificate */
+.certificate-box {
+    position: relative;
+    background-color: #64a0f9;
+    border-radius: 10px;
+    height: 400px;
+    /* Syarat 1 penggunaan vanila tilt*/
+    /*Kalau pakai "overflow: hidden;" fitur vanila tilt nya jadi ga berjalan untuk efek 3D nya. Tapi kalau fitur ini di hapus, problem beriutnya adalah objeknya jadi menggeser kekanan. Cara memperbaikinya adalah kunjungin bagian "before" → "left minus-nya dihapus" dan kita bermain di bagian o"pasitynya"*/
+    /* Setelah itu, "left sama "transform yang ada di "hover::before" dipindah di "before". Begitu pula bagian "after-nya", diberlakukan hal yang sama.*/
+
+    /* Syarat ke-2 penggunaan Vanilla tilt */
+    /* Pada "certificate-box" gunakan "transform-style: preserve-3d"*/
+    transform-style: preserve-3d;
+}
+/* Syarat ke-3 penggunaan Vanilla tilt */
+/* Agar menimbulkan kesan 3D pada tulisannya, beralih ke "certivicate-name", dan tambahkan "transform: translate3d(0, 0, 50px)". #(x, y, z) ( agar mengarah ke kita ).*/
+
+/* Syarat ke-4 prnggunaan Vanilla tilt */
+/* Bagian "certificate-img" nya yang awalnya "translate" biasa harus diubah ke "translate3d" dan juga ditambah "100px" didalamnya (-50%, -52%, 100px)*/
+
+.certificate-box::before{
+content:'MY';
+position: absolute;
+color: #fff;
+font-size: 6em;
+font-weight: bold;
+font-style: italic;
+/*left: -100px;*/
+left: 50%;
+transform: translate(-50%, 0);
+transition: 0.5s;
+opacity: 0 ;
+}
+
+.certificate-box:hover::before{
+    /*left: 50%;
+    transform: translate(-50%, 0);*/
+    opacity: 0.2;
+}
+
+.certificate-box::after {
+    content:'CERTIFICATE';
+    position: absolute;
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: bold;
+    font-style: italic;
+    top: 300px;
+    /*left: 300px ;*/
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: 0.5s;
+    opacity: 0 ;
+    }
+
+    .certificate-box:hover::after{
+        /*left: 50%;
+        transform: translate(-50%, 0);*/
+        opacity: 0.2;
+    }
+
+    .certificate-name {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        font-size: 2em;
+        opacity: 0;
+        transform: translate3d(0, 0, 50px);
+        transition: 0.5s;
+    }
+
+    .certificate-box:hover .certificate-name {
+        top: 20px;
+        opacity: 1;
+    }
+
+    .certificate-detail-button {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate3d(-50%, 0, 100px);
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .certificate-box:hover .certificate-detail-button {
+        opacity: 1;
+        bottom: 8.5px;
+    }
+
+    .certificate-img {
+        position: absolute;
+        top: 52%;
+        left: 50%;
+        transform: translate3d(-50%, -52%, 80px);
+        max-width: 170px;
+        transition: 0.5s;
+        z-index: 10;
+    }
+
+    .certificate-box:hover .certificate-img {
+        transform: translate3d(-50%, -52%, 100px)  scale(1.2);
+    }
